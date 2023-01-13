@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css?10" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="buttons">
+    <div class="crud">
+        <div class="crud_1">
+            <input type="file" id="file">
+            <button onclick="readFile(document.getElementById('file'))">Read</button>
+        </div>
+        <div class="crud_2">
+            <button onclick="download('text.txt', 'text/plain')">Create file</button>
+            <button><a href="" id="a">Download</a></button>
+        </div>
+
+    </div>
+    <div class="action">
+        <div class="action_2">
+            <div class="dropdown">
+                <button >Size</button>
+                <div class="dropdown-content">
+                    <button onclick="size5()">5</button>
+                    <button onclick="size4()">4</button>
+                    <button onclick="size3()">3</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button >Color</button>
+                <div class="dropdown-content">
+                    <button onclick="colorRed()">Red</button>
+                    <button onclick="colorBlue()">Blue</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button >List</button>
+                <div class="dropdown-content">
+                    <button onclick="insertUnorderedList()">insertUnorderedList</button>
+                    <button onclick="insertOrderedList()">insertOrderedList</button>
+                </div>
+            </div>
+            <button onclick="bold()">Bold</button>
+            <button onclick="underline()">underline</button>
+            <button onclick="italic()">italic</button>
+            <div class="dropdown">
+                <button >justify</button>
+                <div class="dropdown-content">
+                    <button onclick="justifyCenter()">Center</button>
+                    <button onclick="justifyRight()">Right</button>
+                    <button onclick="justifyLeft()">Left</button>
+                </div>
+            </div>
+            <button onclick="undo()">Undo</button>
+            <input type="button" onclick="printDiv('out')" value="Print" />
+        </div>
+    </div>
+</div>
+
+<div class="content" id="out" contenteditable="true">
+</div>
+
+<script src="test.js?5"></script>
+</body>
+</html>
